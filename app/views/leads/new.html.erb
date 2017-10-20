@@ -1,0 +1,21 @@
+<div class="page1">
+  <section>
+    <div class="row box">
+      <div class="center-box">
+        <div id="logo" class="row">
+          <%= image_tag("logo.png", :alt => "PinsAndPatchez Logo") %>
+        </div>
+        <h3 class="heading centered-text">FREE Patches Giveaway…</h3>
+        <h3 class="centered-text">We’re giving away a <b><u>LIMITED</u></b> amount of patches for <b><u>FREE</u></b> to celebrate the launch of our new product line.</h3>
+        <p>Enter your E-mail to get access to this exclusive offer.</p>
+        <%= form_for @lead, :html => {'align' => 'center'} do |f| %>
+            <%= f.email_field :email, :placeholder => "E-mail", id: "email-input" %>
+            <br>
+            <br>
+            <%= render 'shared/error_messages' %>
+            <%= f.submit "Get Access", class: "btn btn-sm btn-primary" %>
+        <% end %>
+      </div>
+    </div>
+  </section>
+</div>

@@ -1,0 +1,129 @@
+// Place all the styles related to the leads controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+/* Imported Fonts */
+
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,900');
+
+/* General rules */
+
+h3 {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+p {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.centered-text {
+  text-align: center;
+}
+
+.col-centered {
+  margin: 0 auto;
+}
+
+.row-centered {
+  text-align:center;
+  width: 100%;
+}
+
+.center-box{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+  margin: auto;
+  border: 2px solid #eee;
+  background: rgba(255, 255, 255, 0.57); /* background: rgba(221, 0, 95, 0.14); */
+  border-radius: 6px;
+  @media (max-width: 767px) {
+    width: 330px;
+    height: 500px;
+  }
+  @media (min-width: 768px) {
+    width: 560px;
+    height: 590px;
+  }
+}
+
+body {
+  margin: 0;
+  .page1 {
+    section {
+      background-color: rgba(0, 0, 0, 0);
+      border-color: rgba(0, 0, 0, 0);
+      background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("https://lh3.googleusercontent.com/4R5qDPGZ_UkX_5kT11ljheh98lo6kBab6kuVi6uIisTX-nfYvBmCnwAH02OoiVcEItaDmGYXD9QE0ZuYm_MM=s0") no-repeat center center fixed;
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      height: 100vh;
+      .box {
+        div {
+          #logo {
+            text-align: center;
+            img {
+              height: 120px;
+            }
+            }
+          .heading {
+            font-weight: 700;
+          }
+          p {
+            text-align: center;
+            font-size: 17px;
+          }
+          #email-input {
+            width: 80%;
+            height: 40px;
+            font-size: 20px;
+            font-family: 'Source Sans Pro', sans-serif;
+            border: 3px solid #eee;
+          }
+          .btn {
+            width: 140px;
+            height: 60px;
+            font-size: 19px;
+            font-weight: bold;
+            background-color: #dd005f;
+            border: 1px solid #eee;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Error messages */
+#error_explanation {
+  color: #dd005f;
+  ul {
+    color: #dd005f;
+    margin: 0 0 30px 0;
+  }
+}
+
+.alert-danger {
+  color: #fff;
+  border-color: #dd005f;
+  background-color: #dd005f;
+}
+
+.alert {
+  padding: 0;
+}
+
+.field_with_errors {
+  @extend .has-error;
+  .form-control {
+    color: #dd005f;
+  }
+}
